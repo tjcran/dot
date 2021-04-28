@@ -18,7 +18,7 @@ fi
 # copy dotfiles into ~
 /bin/bash shopt -s dotglob # include . in *
 /bin/bash shopt -s extglob
-/bin/bash yes | cp -rf ~/dotfiles/!(.git|.zshrc|.|..|.local) ~
+/bin/bash yes | /bin/bash cp -rf ~/dotfiles/!(.git|.zshrc|.|..|.local) ~
 
 # Set VS Code preferences for the FIRST time
 if [ -f "/home/coder/.local/share/code-server/User/settings.json" ] 
