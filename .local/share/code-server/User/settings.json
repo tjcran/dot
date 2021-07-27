@@ -1,6 +1,0 @@
-{
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
-    "_terminal.integrated.shell.linux": "/usr/bin/zsh",
-    "editor.formatOnSave": true
-}
