@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 # Install ZSH
-sudo apt-get update
 sudo apt-get install -y vim zsh nano shopt
 sudo chsh -s /bin/zsh $USER
 
@@ -20,4 +19,3 @@ fi
 /bin/bash shopt -s dotglob # include . in *
 /bin/bash shopt -s extglob
 /bin/bash yes | /bin/bash cp -rf ~/dotfiles/!(.git|.zshrc|.|..|.local) ~
-
