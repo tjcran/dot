@@ -20,13 +20,3 @@ fi
 /bin/bash shopt -s extglob
 /bin/bash yes | /bin/bash cp -rf ~/dotfiles/!(.git|.zshrc|.|..|.local) ~
 
-# Set VS Code preferences for the FIRST time
-if [ -f "/home/coder/.local/share/code-server/User/settings.json" ] 
-then
-    echo "VS Code settings are already present." 
-else
-    cp -rf /home/coder/dotfiles/.local ~/.local
-    # Install extensions
-    /opt/coder/code-server/bin/code-server --install-extension esbenp.prettier-vscode
-    /opt/coder/code-server/bin/code-server --install-extension daylerees.rainglow
-fi
